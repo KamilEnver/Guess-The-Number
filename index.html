@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GuessTheNumber</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-  
+  <div class="main">
+    <h1>Guess The Number</h1>
+    <br />
+    <h2>You must enter a number between 1 and 100 (both inclusive) in the box below</h2>
+    <div class="input-container">
+      <input type="number" name="Number" class="number" placeholder="Enter Your Guess..."  min="1" max="100"/>
+      <button type="submit" class="check">Check</button>
+      <button type="reset" class="reset" name="Reset">
+        Restart
+      </button>
+    </div>
+    <div class="result-box">
+      <p id="note">AAA</p><br>
+      <span>Guessed Numbers:</span> <input id="guessed-number" type="text" readonly><br>
+      <span>Number of Attempts:</span> <input id="attempt-number" type="text" readonly>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
+
 </html>
