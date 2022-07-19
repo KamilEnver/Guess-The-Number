@@ -23,7 +23,6 @@ inputNumber.addEventListener("keypress", (e) => {
 
 checkButton.addEventListener("click", () => {
   if (targetNumber == inputNumber.value) {
-    // inputNumber.focus();
     informBox.innerText = "Congratulations, you won!!"
     informBox.style.backgroundColor = "yellow"
     informBox.style.color = "blueviolet"
